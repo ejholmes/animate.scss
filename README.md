@@ -42,6 +42,13 @@ Adjust the speed of an animation.
 }
 ```
 
+Or just use the css classes.
+
+```haml
+.animated.fadeIn
+  Fade in!
+```
+
 ## Contributing
 
 1. Fork it
