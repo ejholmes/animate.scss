@@ -15,6 +15,10 @@
           animation-fill-mode: both;
 }
 
+body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+    -webkit-backface-visibility: hidden;
+}
+
 .animated {
-  @include animated($speed: 1s);
+  @include animated;
 }
