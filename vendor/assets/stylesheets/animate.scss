@@ -1,9 +1,9 @@
-@mixin animate($animation, $speed: 1s) {
-  @if $animation {
-    -webkit-animation-name: bounce;
-       -moz-animation-name: bounce;
-         -o-animation-name: bounce;
-            animation-name: bounce;
+@mixin animate($animation: none, $speed: 1s) {
+  @if $animation != none {
+    -webkit-animation-name: $animation;
+       -moz-animation-name: $animation;
+         -o-animation-name: $animation;
+            animation-name: $animation;
   }
   -webkit-animation-duration: $speed;
      -moz-animation-duration: $speed;
@@ -20,5 +20,5 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 }
 
 .animated {
-  @include animated;
+  @include animate;
 }
