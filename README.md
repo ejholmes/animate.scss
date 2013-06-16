@@ -19,6 +19,13 @@ Or install it yourself as:
 
 ## Usage
 
+@import animations that you want.
+
+```scss
+@import 'animate/bounce';
+@import 'animate/fadeIn';
+```
+
 Include an animation on an element.
 
 ```scss
@@ -26,6 +33,8 @@ Include an animation on an element.
   @include animate(fadeIn, 1s);
 }
 ```
+
+Adjust the speed of an animation.
 
 ```scss
 .element.fadeIn {

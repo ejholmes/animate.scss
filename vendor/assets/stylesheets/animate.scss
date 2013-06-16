@@ -1,4 +1,10 @@
 @mixin animate($animation, $speed: 1s) {
+  @if $animation {
+    -webkit-animation-name: bounce;
+       -moz-animation-name: bounce;
+         -o-animation-name: bounce;
+            animation-name: bounce;
+  }
   -webkit-animation-duration: $speed;
      -moz-animation-duration: $speed;
        -o-animation-duration: $speed;
@@ -7,4 +13,8 @@
      -moz-animation-fill-mode: both;
        -o-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+.animated {
+  @include animated($speed: 1s);
 }
