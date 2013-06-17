@@ -1,4 +1,6 @@
-@mixin animate($animation: none, $speed: 1s) {
+$animate-scss-speed: 1s !default;
+
+@mixin animate($animation: none, $speed: $animate-scss-speed) {
   @if $animation != none {
     -webkit-animation-name: $animation;
        -moz-animation-name: $animation;
