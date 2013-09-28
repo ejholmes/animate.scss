@@ -1,0 +1,18 @@
+$animate-scss-speed: 1s !default;
+
+@mixin animate($animation: none, $speed: $animate-scss-speed) {
+  @if $animation != none {
+    -webkit-animation-name: $animation;
+       -moz-animation-name: $animation;
+         -o-animation-name: $animation;
+            animation-name: $animation;
+  }
+  -webkit-animation-duration: $speed;
+     -moz-animation-duration: $speed;
+       -o-animation-duration: $speed;
+          animation-duration: $speed;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
