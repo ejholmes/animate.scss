@@ -1,5 +1,5 @@
 var path = require('path');
 
 module.exports = {
-  includePaths: [path.resolve('./vendor/assets/stylesheets')]
+  includePaths: [path.resolve(__dirname, './vendor/assets/stylesheets')]
 }
